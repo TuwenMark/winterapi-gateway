@@ -5,13 +5,14 @@ import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Service;
 
 /**
  * @author Mr.Ye
  */
-@SpringBootApplication
+@SpringBootApplication(exclude= DataSourceAutoConfiguration.class)
 @Service
 @EnableDubbo
 public class WinterApiGatewayApplication {

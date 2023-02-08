@@ -52,6 +52,11 @@
             <version>0.0.1</version>
         </dependency>
         <dependency>
+            <groupId>com.winter</groupId>
+            <artifactId>winter-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
